@@ -167,6 +167,9 @@ a{
     transform-origin: bottom;
 
 }
+.header__container .header__nav li:focus{
+    text-decoration: underline;
+}
 .circle {
     position: fixed;
     display: flex;
@@ -199,7 +202,7 @@ a{
     position: fixed;
     bottom: 1rem;
     left: 50%;
-    width: 30px;
+    width: 50px;
     height: 60px;
     border: 2px solid white;
     border-radius: 60px;
@@ -211,8 +214,8 @@ a{
     top: 1rem;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 8px;
-    height: 8px;
+    width: 2px;
+    height: 12px;
     border-radius: 8px;
     background-color: white;
     animation: 1s ease-in 1s infinite  both running scroll-animation;
@@ -221,7 +224,7 @@ a{
 }
 @keyframes scroll-animation {
     0%{
-        top: 1rem;
+        top: .7rem;
         opacity: 0;
     }
     25%{
