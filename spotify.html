@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weeknd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="albumPage">
+        <video playsinline autoplay muted loop>
+            <source src="./video/theweeknd.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="album">
+            <aside>
+                <img src="./pictures/album.jpg" alt="" id="albumPict">
+
+                <h1>After Hours</h1>
+                <div id="spotifyLink">
+                    <img src="./pictures/spotifyIcon.png" alt="" id="spotifyPict">
+                    <a href="https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj?si=W2BSSb51QRuT5BBqH0iRDA"
+                        target="_blank">Play On Spotify
+                    </a>
+                </div>
+            </aside>
+            <ul>
+                <li>Alone Again</li>
+                <li>Too Late</li>
+                <li>Hardest To Love</li>
+                <li>Scared To Live</li>
+                <li>Snowchild</li>
+                <li>Escape From LA</li>
+                <li>Heartless</li>
+                <li>Faith</li>
+                <li>Blinding Lights</li>
+                <li>In Your Eyes</li>
+                <li>Save Your Tears</li>
+                <li>Repeat After Me (interlude)</li>
+                <li>After Hours</li>
+                <li>Until I Bleed Out</li>
+
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    @font-face {
+        font-family: drukTextWide;
+        src: url(assets/fonts/DrukTextWide-Heavy-Trial.otf);
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    :root {
+        --fontTitle: drukTextWide;
+        --fontText: 'Poppins', sans-serif;
+        --btn-shadow-color: #6E5C20;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+
+    .albumPage {
+      
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding-left: 13%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+       
+    }
+
+    video {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    .album {
+        font-family: var(--fontText);
+        display: flex;
+        position: relative;
+        color: white;
+        font-size: 0.6em;
+        margin-top: 10%;
+        margin-bottom: 10%;
+
+    }
+
+    .album h1 {
+        font-family: var(--fontTitle);
+        font-size: 100%;
+
+    }
+
+    .album ul {
+        list-style-type: decimal;
+    }
+
+    #albumPict {
+        width: 100%;
+    }
+
+    #spotifyLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #spotifyPict {
+        width: 10%;
+        margin: 2%;
+    }
+
+    .album aside {
+        width: 15vw;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    aside a {
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    /* unvisited link */
+    aside a:link {
+        color: red;
+    }
+
+    /* visited link */
+    aside a:visited {
+        color: white;
+    }
+
+    /* mouse over link */
+    aside a:hover {
+        color: hotpink;
+    }
+
+    /* selected link */
+    aside a:active {
+        color: blue;
+    }
+</style>
