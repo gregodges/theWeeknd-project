@@ -155,14 +155,10 @@ a {
 
 /*PAGE SPOTIFY*/
 .albumPage {
-
-	height: auto;
+	height: 100vh;
 	position: relative;
 	overflow: hidden;
-	padding-left: 13%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-
+	padding-left: 10%;
 }
 
 video {
@@ -179,44 +175,27 @@ video {
 	display: flex;
 	position: relative;
 	color: white;
-	font-size: 0.6em;
-	margin-top: 10%;
-	margin-bottom: 10%;
-	width: 350px;
+	width: auto;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 .album h1 {
 	font-family: var(--fontTitle);
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 
 .album ul {
-	flex: 1;
+	margin-top: -5px;
+	font-size: 1.4em;
 	line-height: 150%;
 	list-style-type: decimal;
-	margin-left: 10px;
-}
-
-
-#albumPict {
-	width: 120px;
-	margin-bottom: 10px;
-}
-
-#spotifyLink {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#spotifyPict {
-	width: 18px;
-	margin-right: 5px;
+	margin-left: 75px;
 }
 
 .album aside {
-	flex: 1;
-	font-size: 1.5em;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -241,9 +220,26 @@ video {
 	color: #161616;
 }
 
+#albumPict {
+	width: 270px;
+	margin-bottom: 15px;
+}
+
+#spotifyLink {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#spotifyPict {
+	width: 40px;
+	margin-right: 5px;
+}
+
 @media screen and (max-width: 450px) {
 
 	.albumPage {
+		height: auto;
 		background-color: #161616;
 		position: initial;
 		padding-left: initial;
@@ -262,18 +258,35 @@ video {
 	}
 
 	.album {
+		font-size: 1.2em;
 		justify-content: center;
 		position: initial;
 		margin-top: 5%;
 		margin-bottom: 5%;
 		width: 100%;
+		font-size: 0.6em;
+		top: initial;
+		-ms-transform: initial;
+		transform: initial;
+	}
+
+	.album h1 {
+		margin-bottom: 5px;
 	}
 
 	.album aside {
 		flex: initial;
+		font-size: 1.5em;
+	}
+
+	#albumPict {
+		width: 120px;
+		margin-bottom: 10px;
 	}
 
 	.album ul {
+		margin-top: -3px;
+		font-size: 1.2em;
 		flex: initial;
 		margin-left: 30px;
 	}
