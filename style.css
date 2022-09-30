@@ -62,3 +62,97 @@ a{
  }
 
 /* BIG RESET ABOVE !! DO NOT TOUCH !! */
+
+
+.datePage {
+	background-color: #161616;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	color:white;
+	font-family: var(--fontText);
+	font-size: 1.5em;
+}
+
+
+
+
+.date-title h3 {
+	font-family: var(--fontTitle);
+	padding-top: 2em;
+	padding-left: 5em;
+	margin-bottom: 1em;
+	color: white;
+    font-size: 4rem;
+	border: 1px green solid;
+	
+}
+
+
+
+
+.dates {
+	display: flex;
+	text-align: center;
+	display: inline-flex;
+	margin-top: 2em;
+
+
+	padding-left: 2em;
+	border: 1px gold solid;
+
+	
+  }
+
+
+  .wrapper {
+	display: inline-block;
+	border: 1px red solid;
+
+
+ 
+	
+   }
+   
+  
+ .wrapper span {
+	margin-right: 15em;
+	border: 4px purple solid;
+
+
+  }
+
+  button {
+	align-items:center;
+	font: inherit;
+	border-radius: 50px; 
+	padding: 10px;
+	width: 40px;
+	height: 10px;
+	font: inherit;
+	margin: 0.5em;
+	display: inline-flex;
+	background: #202020;
+	color: gray;
+	border: none;
+	transition: all 500ms ease;
+  }
+
+ 
+  
+  button:hover {
+	padding: 10px;
+	margin-left: 40px;
+	box-shadow: 0px 5px 5px 5px rgba(48, 58, 195, 0.5);
+
+	transition: all 500ms ease;
+  }
+
+ 
+
+  
+
+
+
+
+
