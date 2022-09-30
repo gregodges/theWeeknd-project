@@ -80,10 +80,11 @@ a{
 .date-title h3 {
 	font-family: var(--fontTitle);
 	padding-top: 2em;
-	padding-left: 3em;
+	padding-left: 5em;
 	margin-bottom: 1em;
 	color: white;
     font-size: 4rem;
+	border: 1px green solid;
 	
 }
 
@@ -94,14 +95,20 @@ a{
 	display: flex;
 	text-align: center;
 	display: inline-flex;
-	margin-left: 20em;
+	margin-top: 2em;
+
+
 	padding-left: 2em;
+	border: 1px gold solid;
+
 	
   }
 
 
   .wrapper {
 	display: inline-block;
+	border: 1px red solid;
+
 
  
 	
@@ -110,6 +117,8 @@ a{
   
  .wrapper span {
 	margin-right: 15em;
+	border: 4px purple solid;
+
 
   }
 
