@@ -53,11 +53,16 @@
         </div>
         <div class="newsletter">
             <form>
-                <input type='text' placeholder="E-mail"><br />
-                <button class="btn_form" role="button">
-                    Subscribe
+                <img class="subscribed-icon" src="assets/img/correct.png" alt="subscribed icon">
+                <input type='email' class="form__email" required placeholder="E-mail">
+                <button class="btn_form" type='button' role="button">
+                    Subscribe <span class="btn_form-d">d</span>
                 </button>
             </form>
+            <div class="checkbox__container">
+                <input class="checkbox"  required type="checkbox" id='checkbox_newsletter' name="check-box">
+                <label class="form__label" for="checkbox_newsletter">I have read and I accept the terms and conditions</label>
+            </div>
         </div>
         <footer>
             <p class="copyrigth">© COPYRIGHT 2022 - All Rights Reserved WildCodeSchool</p>
