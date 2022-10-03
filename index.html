@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>The Weeknd</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>The Weeknd</title>
 </head>
+
 <body>
-    <!-- PAGE SPOTIFY -->
-    <div class="albumPage">
-        <video playsinline autoplay muted loop>
-            <source src="./assets/video/theweeknd.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="album">
-            <aside>
-                <img src="./assets/img/album.jpg" alt="" id="albumPict">
+        <!-------SPOTIFY PAGE------->
+        <div class="albumPage">
 
-                <h1>After Hours</h1>
-                <div id="spotifyLink">
-                    <img src="./assets/img/spotifyIcon.png" alt="" id="spotifyPict">
-                    <a href="https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj?si=W2BSSb51QRuT5BBqH0iRDA"
-                        target="_blank">Play On Spotify
-                    </a>
+                <div class="hideClipDiv" id="ClipDiv">
+                        <video class="fullClipVideo" controls playsinline>
+                                <source src="./assets/video/theweekndFull.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                        </video>
+                        <div class="exitBackground">
+                                <img src="./assets/img/return (1).png" alt="close">
+                                <!--TO REMOVE IF ONE IS ENOUGHT    
+                                <img src="./assets/img/return (1).png" alt="close">
+                                <img src="./assets/img/return (1).png" alt="close"> -->
+                        </div>
                 </div>
-            </aside>
-            <ul>
-                <li>Alone Again</li>
-                <li>Too Late</li>
-                <li>Hardest To Love</li>
-                <li>Scared To Live</li>
-                <li>Snowchild</li>
-                <li>Escape From LA</li>
-                <li>Heartless</li>
-                <li>Faith</li>
-                <li>Blinding Lights</li>
-                <li>In Your Eyes</li>
-                <li>Save Your Tears</li>
-                <li>Repeat After Me (interlude)</li>
-                <li>After Hours</li>
-                <li>Until I Bleed Out</li>
 
+                <div class="muteButtonHide" id="muteButton"><img src="./assets/img/cancel (1).png" alt="close"></div>
 
-            </ul>
+                <video id="backgroundVideo" playsinline autoplay muted loop>
+                        <source src="./assets/video/theweeknd.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+
+                <div class="album">
+                        <aside>
+                                <img src="./assets/img/album.jpg" alt="" id="albumPict">
+
+                                <h1>After Hours</h1>
+
+                                <div id="spotifyLink">
+                                        <img src="./assets/img/spotifyIcon.png" alt="" id="spotifyPict">
+                                        <a href="https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj?si=W2BSSb51QRuT5BBqH0iRDA"
+                                                target="_blank">Play On Spotify
+                                        </a>
+                                </div>
+                        </aside>
+                        <ul>
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/6b5P51m8xx2XA6U7sdNZ5E?si=e0ffbefc66c94296"
+                                                target="_blank">Alone Again</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/2K9Ovn1o2bTGqbsABGC6m3?si=c7ccb71e772a4355"
+                                                target="_blank">Late</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/6kWxIqQDsKFYCJGbU4AjCX?si=9b09c88436564f5a"
+                                                target="_blank">Hardest To Love</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/4BGZF4oLbTL0pWm7C18pbv?si=3facbd9fb8d14be4"
+                                                target="_blank">Scared To Live</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/3WlbeuhfRSqU7ylK2Ui5U7?si=25069a7c88ab4825"
+                                                target="_blank">Snowchild</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/1sOW4PuG5X3Ie3EXUhAopJ?si=098b27187fb14453"
+                                                target="_blank">Escape From LA</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/6bnF93Rx87YqUBLSgjiMU8?si=673269eb26864155"
+                                                target="_blank">Heartless</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/3orEOtd8CPL8GFlpRpKuoE?si=06725ab19b0844d3"
+                                                target="_blank">Faith</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b?si=c55e3744dc2b43fc"
+                                                target="_blank">Blinding Lights</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/7szuecWAPwGoV1e5vGu8tl?si=4e4fd2fd21bd4ef8"
+                                                target="_blank">In Your Eyes</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/5QO79kh1waicV47BqGRL3g?si=54c671f68fa64c65"
+                                                target="_blank">Save Your Tears</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/40U8d12pC5UHqmHwXjHjjl?si=1c35ef08eea344f4"
+                                                target="_blank">Repeat After Me (interlude)</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/2p8IUWQDrpjuFltbdgLOag?si=be2613b59f584cc8"
+                                                target="_blank">After Hours</li>
+
+                                <li class="grow"><a
+                                                href="https://open.spotify.com/track/2BcnxwxBuar5wjCaLqm5N3?si=18e847f0c9ab4495"
+                                                target="_blank">Until I Bleed Out</li>
+                        </ul>
+                </div>
         </div>
-    </div>    
 
-<script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
+
 </html>
