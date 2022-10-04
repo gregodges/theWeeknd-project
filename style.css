@@ -63,9 +63,11 @@ a{
 
 /* BIG RESET ABOVE !! DO NOT TOUCH !! */
 
+/* DATE TOUR PAGE*/
+
 
 .datePage {
-	background-color: #161616;
+	background-color: black;
 	width: 100%;
 	height: 100vh;
 	position: relative;
@@ -75,84 +77,300 @@ a{
 }
 
 
-
-
 .date-title h3 {
 	font-family: var(--fontTitle);
-	padding-top: 2em;
-	padding-left: 5em;
+	padding-top: 3em;
+	padding-left: 3em;
 	margin-bottom: 1em;
 	color: white;
-    font-size: 4rem;
-	border: 1px green solid;
+    font-size: 2.5em;
 	
 }
 
 
-
-
 .dates {
+	width: 100vw;
+	text-align: justify;
 	display: flex;
-	text-align: center;
-	display: inline-flex;
-	margin-top: 2em;
-
-
-	padding-left: 2em;
-	border: 1px gold solid;
-
+	line-height: 3em;
+	padding-top:3em;
+	padding-bottom: 1.5em;
+	padding-left: 3em;
+	padding-right: 5.5em;
 	
   }
 
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 
-  .wrapper {
-	display: inline-block;
-	border: 1px red solid;
-
-
- 
-	
    }
    
+.wrapper li {
+	min-width: 100%;
+	align-items: flex-end;
+}
   
  .wrapper span {
-	margin-right: 15em;
-	border: 4px purple solid;
+	padding-left: 5em;
 
+}
 
-  }
+.wrapper button {
+	margin-right: 10em;
+}
 
-  button {
-	align-items:center;
-	font: inherit;
-	border-radius: 50px; 
-	padding: 10px;
-	width: 40px;
-	height: 10px;
-	font: inherit;
-	margin: 0.5em;
+.wrapper strong {
+		font-weight:bold;
+}
+
+button {
+
+		display: flex;
+		padding: 7px 15px;
+		width: 1.2em;
+		height: 1.4em;
+		font: inherit;
+		border-radius: 3em; 
+		background: #202020;
+		color: white;
+		border: none;
+	
+}
+
+button.b1 {
+	padding: 5px 25px;
 	display: inline-flex;
-	background: #202020;
-	color: gray;
+	width:4em;
+	height: 2em;
+	align-items: center;	
+}
+
+button.b2 {
+
+	display: inline-flex;
+	align-items: center;
+	width:5em;
+	height: 2em;
+	justify-content: center;
+	background-color: #2d2c2c;
+	color: #6E6E6E;
+}
+
+
+.myReddot button.b2 {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 5px 10px;
+	border-radius: 50%;
+	background: red;
+	color: white;
+}
+
+
+ 
+.wrapper:hover {
+	transition: all 500ms ease;
+	transform: translateX(-4em);
+}
+
+.wrapper:hover button  {
+	box-shadow: 0em 0em 1em 0em rgba(224, 225, 135, 0.5);
+	transition: all 1000ms ease;
+}
+
+.wrapper strong {
+	font-weight:bold;
+}
+
+.hiddenL:hover {
+		opacity:3;
+		-webkit-transition: opacity .25s ease-in-out .0s;
+		transition: opacity .25s ease-in-out .0s;
+		color:rgba(224, 225, 135, 0.5);
+}
+
+ .hiddenL {
+	opacity: 0;
+ }
+
+ @media (max-width: 1250px) {
+
+
+	.datePage {
+		background-color: black;
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		color:white;
+		font-family: var(--fontText);
+		font-size: 1em;
+	}
+	
+	
+	.date-title h3 {
+		font-family: var(--fontTitle);
+		padding-top: 3em;
+		padding-left: 3em;
+		margin-bottom: 1em;
+		color: white;
+		font-size: 3em;
+		
+	}
+	
+	
+	.dates {
+		width: 100vw;
+		text-align: justify;
+		display: flex;
+		line-height: 4em;
+		padding-top:3em;
+		padding-bottom: 1.5em;
+		padding-left: 1em;
+		padding-right: 2em;
+		
+	  }
+
+ @media screen and (max-width: 450px) {
+
+
+.datePage {
+	background-color: black;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	color:white;
+	font-family: var(--fontText);
+	font-size: 0.4em;
+	padding-left: 6em;
+}
+
+.date-title h3 {
+	font-family: var(--fontTitle);
+	padding-top: 5em;
+	padding-left: 2em;
+	padding-bottom: 1.2em;
+	color: white;
+    font-size: 3em;
+	
+}
+
+.dates {
+	width: 100vw;
+	text-align: justify;
+	display: flex;
+	line-height: 5em;
+	padding-top:3em;
+	padding-bottom: 1.5em;
+	padding-left: 2em;
+	padding-right: 6em;
+	
+  }
+
+  .wrapper {
+	display: flex;
+	justify-content:space-around;
+	width: 100%;
+
+   }
+   
+.wrapper li {
+	min-width: 100%;
+	align-items: flex-end;
+}
+  
+ .wrapper span {
+	padding-left: 4em;
+
+}
+
+.wrapper button {
+	margin-right: 10em;
+}
+
+.wrapper strong {
+		font-weight:bold;
+	  }
+
+button {
+	display: flex;
+	padding: inherit;
+	width: inherit;
+	height:inherit;
+	font: inherit;
+	border-radius: inherit; 
+	background: inherit;
+	color: white;
 	border: none;
-	transition: all 500ms ease;
-  }
+	}
+
+button.b1 {
+	padding: 7px 15px;
+	display: inline-flex;
+	justify-content: center;
+}
+
+button.b2 {
+	display: inline-flex;
+	background-color: #2d2c2c;
+	color: #6E6E6E;
+}
 
  
-  
-  button:hover {
-	padding: 10px;
-	margin-left: 40px;
-	box-shadow: 0px 5px 5px 5px rgba(48, 58, 195, 0.5);
-
+.wrapper:hover {
+	display: flex;
+	justify-content:space-around;
 	transition: all 500ms ease;
+	transform: none;
+	width: 100%;
+
+	
+}
+
+.wrapper:hover button  {
+	display: flex;
+	justify-content:inherit;
+	transition: all 500ms ease;
+	transform:none;
+	box-shadow: none;
+
+}
+
+.wrapper strong {
+	font-weight:bold;
+}
+
+
+ .hiddenL {
+	opacity: 0;
+ }
+
+
+
+
+
+.myReddot button.b2 {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 5px 10px;
+	border-radius: 50%;
+	background: red;
+	color: white;
   }
 
- 
-
-  
 
 
+ .hiddenL {
+	opacity: 0;
+ }
+
+ .hiddenL:hover {
+	opacity:0;
+
+}
 
 
-
+ }}
