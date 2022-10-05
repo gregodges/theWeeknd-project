@@ -16,6 +16,7 @@ window.addEventListener('scroll', event =>{
     circle.style.width = scrollPos / 2+ 'px';
     circle.style.height =scrollPos /2 + 'px';
     circle.style.borderRadius = scrollPos / 2 + 'px'; 
+
 })
 
 submitBtn.addEventListener("click", event =>{
