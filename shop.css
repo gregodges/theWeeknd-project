@@ -105,6 +105,7 @@ a{
 		align-items: center;
 		justify-content: center;
 		background-color: #D9D9D9;	
+		overflow: hidden;
 	}
 	.item {
 		color:white;
@@ -118,10 +119,10 @@ a{
 		font-size: 2rem;
 		padding: 8px;	
 	}
-	.button {
+	.buttonBuy {
 		background-color: #333834; 
 		border: none;
-		border-radius: 12px;
+		border-radius: 100px;
 		color: white;
 		width: 100px;
 		margin-left: 10%;
@@ -129,12 +130,63 @@ a{
 		font-size: 2rem;
 
 	}
+	.buttonBuy:hover {
+		background-color: #495b67;
+		box-shadow: 0.3px 0.3px .1em 0em rgba(224, 225, 135, 0.5);
+		cursor: pointer;
+	}
+.whiteBasket {
+	position: absolute;
+	 top: 20px;
+    right: 20px;
+    width: 4%; 
+}
+
+.blackBasket {
+	position: absolute;
+	visibility: hidden;
+	 top: 20px;
+    right: 20px;
+    width: 5%; 
+}
+
+
+/* Button Animation */
+
+ @keyframes toBasket {
+	0% {
+	  transform: translate(0px, 0px);
+	}
+	50% {
+	  transform: translate(0px, 100%) rotate(180deg) scale(0.5);
+	}
+	100% {
+	  transform: translate(0px, 0px) rotate(0deg);
+	}
+  } 
+
+   .animate {
+	animation-name: toBasket;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+  }
+ 
+
+
 	/*Responsive Section */
+
 	@media  all and (max-width : 450px){
 		#shop {
 			display:grid;
 		
 		}
+		.whiteBasket {
+			visibility: hidden;
+			}
+
+		.blackBasket {
+			visibility: visible;
+			}	
 
 		.box1 { 
 			width: 100%;
@@ -183,7 +235,7 @@ a{
 				font-size:1.5rem;
 				padding: 8px;	
 			}
-			.button {
+			.buttonBuy {
 				background-color: #333834; 
 				border: none;
 				border-radius: 12px;
@@ -193,5 +245,8 @@ a{
 				padding:8px;
 				font-size: 1rem;
 				margin-bottom: 2rem;
-	}
-	
+			}
+
+		
+		}
+
