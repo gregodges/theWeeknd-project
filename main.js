@@ -19,10 +19,11 @@ exitBackground.addEventListener("click", function () {
         document.querySelector('#muteButton').className = "muteButtonShow";
         document.querySelector('#ClipDiv').className = "hideClipDiv";
     }
-    else { document.querySelector('#ClipDiv').className = "hideClipDiv"; };
+    else { document.querySelector('#ClipDiv').className = "hideClipDiv";
+    document.querySelector('#muteButton').className = "muteButtonHide"; };
 });
 
-/* hide stop button*/
+/* hide mute button*/
 muteButton.addEventListener("click", function () {
     document.querySelector('#muteButton').className = "muteButtonHide";
     videoLaunch.pause();

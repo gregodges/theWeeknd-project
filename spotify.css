@@ -1,11 +1,3 @@
-
-/* -------------TO DELETE--------------- */
-body {
-	background-color: rgba(22, 22, 22, .9);
-}
-/* -------------TO DELETE--------------- */
-
-
 /*-----SPOTIFY PAGE-----*/
 .albumPage {
 	height: 100vh;
@@ -41,8 +33,7 @@ body {
 .album ul {
 	margin-top: -5px;
 	font-size: 1.4em;
-	line-height: 150%; /* fout la merde en rotate et surface duo 
-	RESPONSIVE >> height 475 >> line-height: 110%?*/
+	line-height: 150%;
 	list-style-type: decimal;
 	margin-left: 75px;
 }
@@ -51,7 +42,6 @@ body {
 	font-size: 2em;
 	text-align: center;
 }
-
 
 /* unvisited link */
 .album aside a:link {
@@ -92,23 +82,23 @@ body {
 
 /* SHAKE ON ALBUM PICTURE */
 @keyframes shakePict {
-	
+
 	10%,
 	90% {
 		transform: translate3d(-1px, 0, 0);
 	}
-	
+
 	20%,
 	80% {
 		transform: translate3d(2px, 0, 0);
 	}
-	
+
 	30%,
 	50%,
 	70% {
 		transform: translate3d(-4px, 0, 0);
 	}
-	
+
 	40%,
 	60% {
 		transform: translate3d(4px, 0, 0);
@@ -120,7 +110,7 @@ body {
 	cursor: pointer;
 }
 
-/* PLAYLIST GROW ON HOVER */
+/* PLAYLIST GROW ON HOVER (+ muteButton) */
 .grow {
 	transition: all .2s ease-in-out;
 	cursor: pointer;
@@ -194,13 +184,6 @@ body {
 }
 
 .muteButtonHide {
-	position: absolute;
-	top: 90%;
-	left: 90%;
-	z-index: 1;
-}
-
-.muteButtonHide img {
 	visibility: hidden;
 }
 
@@ -212,12 +195,21 @@ body {
 	top: 90%;
 	left: 90%;
 	z-index: 1;
+	background-image: url("./assets/img/sound.png");
+	background-size: contain;
+background-repeat: no-repeat;
+    width: 3vw; height: 5vh;
 }
 
-.muteButtonShow img {
+.muteButtonShow:hover{
+	background-image: url("./assets/img/silent.png");
+}
+
+/* .muteButtonShow img {
 	width: 2vw;
 	visibility: visible;
-}
+		
+} */
 
 .muteButtonShow:hover {
 	transform: scale(1.3);
@@ -268,20 +260,27 @@ body {
 	}
 
 	#albumPict {
-		width: 120px; /* A VOIR  50%?*/ 
-		margin-bottom: 10px; /* A VOIR 5%?*/
+		width: 120px;
+		/* A VOIR  50%?*/
+		margin-bottom: 10px;
+		/* A VOIR 5%?*/
 	}
 
 	.album ul {
-		margin-top: -3px; /* A VOIR effacer?*/
+		margin-top: -3px;
+		/* A VOIR effacer?*/
 		font-size: 1.2em;
-		flex: initial; /* A VOIR effacer?*/
-		margin-left: 30px; /* A VOIR */
+		flex: initial;
+		/* A VOIR effacer?*/
+		margin-left: 30px;
+		/* A VOIR */
 	}
 
 	#spotifyPict {
-		width: 27px; /* A VOIR */
-		margin-right: 2px; /* A VOIR effacer?*/
+		width: 27px;
+		/* A VOIR */
+		margin-right: 2px;
+		/* A VOIR effacer?*/
 	}
 
 	.album aside a {
