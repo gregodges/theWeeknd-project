@@ -48,12 +48,12 @@ a{
 }
 
 @font-face {
-    font-family: drukTextWide ;
-    src: url(assets/fonts/DrukTextWide-Heavy-Trial.otf);
+    font-family: drukText ;
+    src: url(assets/fonts/Druk-Medium-Trial.otf);
 }
 @import url('https://fonts.googleapis.com/color:whitecss2?family=Poppins&display=swap');
  :root{
-     --fontTitle : drukTextWide;
+     --fontTitle : drukText;
      --fontText : 'Poppins', sans-serif;
      --btn-shadow-color: #6E5C20;
 
