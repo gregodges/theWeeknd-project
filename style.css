@@ -162,59 +162,61 @@ body {
 /* DATE TOUR PAGE*/
 
 
-.datePage {
+.date__container {
 	background-color: black;
-	width: 100%;
-	height: 100vh;
+	width: 100vw;
+	height: auto;
 	position: relative;
 	color:white;
 	font-family: var(--fontText);
 	font-size: 2em;
 	padding-left: 3em;
+    z-index: 30;
 }
 
 
-.date-title h3 {
+.date__container h3 {
 	font-family: var(--fontTitle);
-	padding-top: 3em;
-	padding-left: 2em;
-	margin-bottom: 1em;
 	color: white;
-    font-size: 3.2em;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 5rem;
+
 	
 }
 
 
 .dates {
 	width: 100vw;
-	text-align: justify;
 	display: flex;
-	line-height: 3em;
-	padding-top:3em;
-	padding-bottom: 1.5em;
-	padding-left: 4em;
-	
+    font-size: 1rem;
+  }
+  .dates ul{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+
   }
 
 .wrapper {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	width: 60%;
+    margin: .5rem 0;
 
    }
    
-.wrapper li {
-	min-width: 100%;
-	align-items: flex-end;
-}
-  
  .wrapper span {
 	padding-left: 5em;
+;
 
 }
 
 .wrapper button {
 	margin-right: 10em;
+
+
 }
 
 .wrapper strong {

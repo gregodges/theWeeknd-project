@@ -1,9 +1,11 @@
 /*-----SPOTIFY PAGE-----*/
+
 .albumPage {
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	padding-left: 10%;
+	z-index: 100;
 }
 
 #backgroundVideo {
@@ -185,6 +187,10 @@
 
 .muteButtonHide {
 	visibility: hidden;
+	z-index: 100;
+
+
+
 }
 
 .muteButtonShow {
@@ -194,11 +200,13 @@
 	position: fixed;
 	top: 90%;
 	left: 90%;
-	z-index: 1;
 	background-image: url("./assets/img/sound.png");
 	background-size: contain;
-background-repeat: no-repeat;
+	background-repeat: no-repeat;
     width: 3vw; height: 5vh;
+	z-index: 100;
+
+
 }
 
 .muteButtonShow:hover{

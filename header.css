@@ -69,6 +69,7 @@
     z-index: 100;
     transform: translate(0, -50%);
     mix-blend-mode: difference;
+    z-index: 201;
 }
 .header__container .header__nav li {
     position: relative;
