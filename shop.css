@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+@font-face {
+    font-family: drukTextWide ;
+    src: url(assets/fonts/DrukTextWide-Heavy-Trial.otf);
+}
+@import url('https://fonts.googleapis.com/color:whitecss2?family=Poppins&display=swap');
+ :root{
+     --fontTitle : drukTextWide;
+     --fontText : 'Poppins', sans-serif;
+     --btn-shadow-color: #6E5C20;
+
+
+     
+ }
+
+/* BIG RESET ABOVE !! DO NOT TOUCH !! */
+
+/*Here goes shop section */
+
+#shop {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100vh;
+	}
+
+	.box1 { 
+	width: 50%;
+	height: 50vh;
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #D9D9D9;
+	}
+	.box2 { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+	height: 50vh;
+	background-color: #161616;
+	}
+	.box3 {  
+	width: 50%;
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #161616;
+	}
+	
+	.box4 {
+		width: 50%;
+		height: 50vh;
+		display : flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #D9D9D9;	
+		overflow: hidden;
+	}
+	.item {
+		color:white;
+		font-size: 2rem;
+		margin-left: 10%;
+		padding: 8px;		
+	}
+	.price {
+		color:white;
+		margin-left: 10%;
+		font-size: 2rem;
+		padding: 8px;	
+	}
+	.buttonBuy {
+		background-color: #333834; 
+		border: none;
+		border-radius: 100px;
+		color: white;
+		width: 100px;
+		margin-left: 10%;
+		padding:8px;
+		font-size: 2rem;
+
+	}
+	.buttonBuy:hover {
+		background-color: #495b67;
+		box-shadow: 0.3px 0.3px .1em 0em rgba(224, 225, 135, 0.5);
+		cursor: pointer;
+	}
+.whiteBasket {
+	position: absolute;
+	 top: 20px;
+    right: 20px;
+    width: 4%; 
+}
+
+.blackBasket {
+	position: absolute;
+	visibility: hidden;
+	 top: 20px;
+    right: 20px;
+    width: 5%; 
+}
+
+
+/* Button Animation */
+
+ @keyframes toBasket {
+	0% {
+	  transform: translate(0px, 0px);
+	}
+	50% {
+	  transform: translate(0px, 100%) rotate(180deg) scale(0.5);
+	}
+	100% {
+	  transform: translate(0px, 0px) rotate(0deg);
+	}
+  } 
+
+   .animate {
+	animation-name: toBasket;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+  }
+ 
+
+
+	/*Responsive Section */
+
+	@media  all and (max-width : 450px){
+		#shop {
+			display:grid;
+		
+		}
+		.whiteBasket {
+			visibility: hidden;
+			}
+
+		.blackBasket {
+			visibility: visible;
+			}	
+
+		.box1 { 
+			width: 100%;
+			display : flex;
+			height: 30vh;
+			align-items: center;
+			justify-content: center;
+			background-color: #D9D9D9;
+			}
+			.box2 { 
+			display: flex;
+			flex-direction: wrap;
+			height: 20vh;
+			justify-content: center;
+			width: 100%;
+			background-color: #161616;
+			}
+			.box3 {  
+			width: 100%;
+			height: 20vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #161616;
+			order: 2;
+			}
+			
+			.box4 {
+				width: 100%;
+				height: 30vh;
+				display : flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #D9D9D9;	
+			}
+			.item {
+				color:white;
+				font-size: 1.5rem;
+				margin-left: 10%;
+				padding: 8px;
+				margin-top: 1rem;		
+			}
+			.price {
+				color:white;
+				margin-left: 10%;
+				font-size:1.5rem;
+				padding: 8px;	
+			}
+			.buttonBuy {
+				background-color: #333834; 
+				border: none;
+				border-radius: 12px;
+				color: white;
+				width: 100px;
+				margin-left: 10%;
+				padding:8px;
+				font-size: 1rem;
+				margin-bottom: 2rem;
+			}
+
+		
+		}
+
