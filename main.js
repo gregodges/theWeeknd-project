@@ -1,13 +1,5 @@
 /*-----SPOTIFY PAGE-----*/
 
-/* ALBUM SHAKE */
-const albumPict = document.querySelector('#albumPict');
-
-albumPict.addEventListener("mouseover", function () {
-    albumPict.classList.toggle("shakePict")
-});
-
-
 /* --VIDEO CLIP-- */
 const AlbumClick = document.querySelector("#albumPict");
 const videoLaunch = document.querySelector(".fullClipVideo");
