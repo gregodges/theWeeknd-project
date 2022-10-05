@@ -64,6 +64,7 @@
 	.item {
 		color:white;
 		font-size: 2rem;
+		font-family: var(--fontText);
 		margin-left: 10%;
 		padding: 8px;		
 	}
@@ -72,6 +73,8 @@
 		margin-left: 10%;
 		font-size: 2rem;
 		padding: 8px;	
+		font-family: var(--fontText);
+
 	}
 	.buttonBuy {
 		background-color: #333834; 

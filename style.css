@@ -160,7 +160,8 @@ a {
 }
 
 body {
-	background-color: rgba(22, 22, 22, .9);
+	background-color: #161616;
+
 }
 
 /* BIG RESET ABOVE !! DO NOT TOUCH !! */
@@ -169,7 +170,7 @@ body {
 
 
 .date__container {
-	background-color: black;
+	background-color: #161616;
 
 	height: 100vh;
 	position: relative;
@@ -184,7 +185,7 @@ body {
 .date__container h2 {
 	font-family: var(--fontTitle);
 	color: white;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 10rem;
     font-size: 5rem;
 
 	
@@ -212,7 +213,8 @@ body {
 	justify-content: space-between;
 	width: 60%;
     margin: .5rem 0;
-    background-color: black;
+    background-color: #161616;
+	cursor: pointer;
 
 
 
@@ -237,9 +239,19 @@ transition: width .4s ease;
 }
 .wrapper:last-of-type:hover span{
     transform: none;
+	cursor: default;
 }
+
+
 .wrapper:last-of-type:hover::after{
     width: 0;
+}
+.wrapper:hover button{
+	box-shadow: 0.3em 0.3em .1em 0em var(--btn-color); ;
+
+}
+.wrapper:last-of-type:hover .buttonSoldout{
+	box-shadow: none;
 }
  .wrapper span {
 	padding-left: 5em;
@@ -320,7 +332,7 @@ transition: width .4s ease;
 }
 
 
-.wrapper .buttonSoldout:hover {
+.wrapper .buttonSoldout:hover{
 	display: flex;
 	transform:none;
 	box-shadow: none;	
@@ -464,3 +476,7 @@ transition: width .4s ease;
 
 
  }
+
+
+
+ 

@@ -403,7 +403,7 @@ input[type='email'] {
     transition: opacity 1s ease-in-out, top 1.5s ease-in-out, transform 1.5s ease-in-out;
 }
 .btn_form:hover {
-	color: #F1C62F;
+	color: var(--btn-color);
 }
 
 
