@@ -135,11 +135,15 @@ a {
 }
 
 @font-face {
-	font-family: drukTextWide;
-	src: url(assets/fonts/DrukTextWide-Heavy-Trial.otf);
+
+
+    font-family: drukTextWide ;
+    src: url(assets/fonts/Druk-Medium-Trial.otf);
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 :root {
 	--fontTitle: drukTextWide;
