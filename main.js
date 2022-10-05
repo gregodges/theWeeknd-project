@@ -74,13 +74,6 @@ submitBtn.addEventListener('mouseover', e=>{
     submitBtn.style.cursor ='default';
 })
 
-
-
-
-
-
-
-
 })
 
 
