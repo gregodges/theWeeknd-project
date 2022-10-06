@@ -159,10 +159,6 @@
 			visibility: hidden;
 			}
 
-		.blackBasket {
-			visibility: visible;
-			}	
-
 		.box1 { 
 			width: 100%;
 			display : flex;
@@ -223,13 +219,20 @@
 			}
 			#items {
 				position: absolute	;
-				top: 20px;
-				right: 100px;
+				top: 10px;
+				right: 50px;
 				color:black;
-				font-size: 2rem;
+				font-size: 1rem;
 				font-style: bold;
 				visibility: hidden;
 			}
-		
+			.blackBasket {
+				visibility: visible;
+				top: 1rem;
+				right: 1rem;
+				width: 2rem; 
+				}	
+	
+	
 		}
 
