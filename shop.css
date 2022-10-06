@@ -97,41 +97,58 @@
 	}
 .whiteBasket {
 	position: absolute;
-	 top: 20px;
-    right: 20px;
-    width: 4%; 
+	top: 2rem;
+    right: 3rem;
+    width: 4rem; 
 }
 
 .blackBasket {
 	position: absolute;
 	visibility: hidden;
-	 top: 20px;
-    right: 20px;
-    width: 5%; 
+	top: 2rem;
+    right: 3rem;
+    width: 4rem; 
 }
 
 
 /* Button Animation */
 
  @keyframes toBasket {
-	0% {
-	  transform: translate(0px, 0px);
-	}
-	50% {
-	  transform: translate(0px, 100%) rotate(180deg) scale(0.5);
-	}
-	100% {
-	  transform: translate(0px, 0px) rotate(0deg);
-	}
+	from {
+		margin-left: 0px;
+		transform: rotate(0deg);
+	  }
+	
+/* 	  50% {
+		margin-right: 100px;
+		opacity: 0.5;
+	  }
+ */	
+	  to {	
+		position: absolute;
+		transform: rotate(360deg);
+		top: 20px	;
+		right: 20px;
+		width: 5%; 
+		/* opacity: 0.1; */
+	  }		
   } 
 
    .animate {
 	animation-name: toBasket;
-	animation-duration: 2s;
-	animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-fill-mode: backwards;
   }
- 
-
+/*Compteur*/
+#items {
+	position: absolute	;
+    top: 20px;
+    right: 100px;
+	color:white;
+	font-size: 2rem;
+	font-style: bold;
+	visibility: hidden;
+}
 
 	/*Responsive Section */
 
@@ -143,10 +160,6 @@
 		.whiteBasket {
 			visibility: hidden;
 			}
-
-		.blackBasket {
-			visibility: visible;
-			}	
 
 		.box1 { 
 			width: 100%;
@@ -206,7 +219,22 @@
 				font-size: 1rem;
 				margin-bottom: 2rem;
 			}
-
-		
+			#items {
+				position: absolute	;
+				top: 10px;
+				right: 50px;
+				color:black;
+				font-size: 1rem;
+				font-style: bold;
+				visibility: hidden;
+			}
+			.blackBasket {
+				visibility: visible;
+				top: 1rem;
+				right: 1rem;
+				width: 2rem; 
+				}	
+	
+	
 		}
 
