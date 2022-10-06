@@ -238,7 +238,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		z-index: 30;
+		z-index: 40;
 		height: 100vh;
 	}
 
@@ -299,26 +299,35 @@
 		font-size: 95%;
 	}
 
+	
 	.fullClipVideo {
-		width: 90%;
-	}
+         position: absolute; 
+        width: 90%;
+        top: 60%; 
+    }
+    .exitBackground img {
+        width: 5%;
+        opacity: 0.8;
+        top: 90%; 
+        left: 48%;
+    }
 
-	.exitBackground img {
-		width: 5%;
-		opacity: 0.8;
-		top: 80%;
-		left: 48%;
-	}
+	
 
 	.muteButtonShow {
-		position: absolute;
+		position: fixed;
 		top: 95%;
-		left: 90%;
-		z-index: 1;
+		left: 87%;
+		z-index: 100 !important;
+		width: 7vw;
+        height: 3.5vh;
+
 	}
 
 	.muteButtonShow img {
 		width: 5vw;
+		z-index: 100 !important;
+
 	}
 
 	.grow:hover {
