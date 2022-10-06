@@ -76,4 +76,24 @@ submitBtn.addEventListener('mouseover', e=>{
 
 })
 
+const vynil = document.getElementById("vynil"); 
+const tShirt = document.getElementById("tShirt"); 
+let numberOf = parseInt(document.getElementById("items").innerHTML);
 
+
+function buyVynil() {
+vynil.classList.add("animate"); 
+setTimeout(() => vynil.classList.remove("animate"),2000);
+document.getElementById("items").style.visibility = "visible";
+numberOf++;
+document.getElementById("items").innerHTML =numberOf;
+}
+
+function buyTshirt() {
+tShirt.classList.add("animate"); 
+setTimeout(() => tShirt.classList.remove("animate"),2000);
+document.getElementById("items").style.visibility = "visible";
+numberOf++;
+document.getElementById("items").innerHTML =numberOf;
+    }
+                       
