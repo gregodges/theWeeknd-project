@@ -33,6 +33,7 @@ muteButton.addEventListener("click", function () {
 /* video endend */
 videoLaunch.addEventListener("ended", function () {
     document.querySelector('#ClipDiv').className = "hideClipDiv";
+    document.querySelector('#muteButton').className = "muteButtonHide";
 });
 
 const circle = document.querySelector('.circle');
