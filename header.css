@@ -196,15 +196,18 @@ main p{
 }
 /* RESPONSIVE */
 @media  all and (max-width : 450px){
+    .scroll-animation::before{display: none;}
     .header__container{
         height: 400vh;
         width: 100vw;
     }
+    .scroll-animation{display: none};
     .header__container .header__hero__wrap .header__img {
         position: relative;
         width: 100%;
         height: 100vh;
         background-image: url(assets/img/header_copie.jpeg);
+        background-size: cover;
 
     }
     .header__container .header__hero__wrap .header__img .hero__title{
@@ -495,7 +498,7 @@ footer p {
         margin: 0;
 
     }
-  
+
    .btn_form{
        width: 150px;
        height: 20px;
@@ -519,7 +522,7 @@ align-self: center;
   
 
    .header__container .header__nav li{
-       margin: 0 .3rem;
+       margin: 0 .6rem;
        
    }
     
