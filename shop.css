@@ -34,6 +34,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: #D9D9D9;
+	overflow: hidden;
 	}
 	.box2 { 
 	display: flex;
@@ -64,6 +65,7 @@
 	.item {
 		color:white;
 		font-size: 2rem;
+		font-family: var(--fontText);
 		margin-left: 10%;
 		padding: 8px;		
 	}
@@ -72,6 +74,8 @@
 		margin-left: 10%;
 		font-size: 2rem;
 		padding: 8px;	
+		font-family: var(--fontText);
+
 	}
 	.buttonBuy {
 		background-color: #333834; 
@@ -85,7 +89,7 @@
 
 	}
 	.buttonBuy:hover {
-		background-color: #495b67;
+		background-color: var(--btn-color); ;
 		box-shadow: 0.3px 0.3px .1em 0em rgba(224, 225, 135, 0.5);
 		cursor: pointer;
 	}
@@ -209,7 +213,7 @@
 			.buttonBuy {
 				background-color: #333834; 
 				border: none;
-				border-radius: 12px;
+				border-radius: 100px;
 				color: white;
 				width: 100px;
 				margin-left: 10%;
